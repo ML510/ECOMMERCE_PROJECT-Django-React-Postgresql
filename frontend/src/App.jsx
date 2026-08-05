@@ -4,7 +4,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/api/products/")
+    fetch("http://127.0.0.1:8000/api/products/")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}`);
